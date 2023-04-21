@@ -27,16 +27,6 @@ import java.util.Date;
 import java.util.List;
 
 public class Filtrillos extends AppCompatActivity {
-    Context context = this;
-    DatePickerDialog datePickerDialog;
-    private boolean pagadas = false;
-    private boolean anuladas = false;
-    private boolean cuotaFija = false;
-    private boolean pendientesPago = false;
-    private boolean planPago = false;
-    private Date fechaInicio = null;
-    private Date fechaFin = null;
-    private int importeMax = 0;
     private SeekBar importeSeekBar;
     private Activity filtrillosActivity = this;
     private Filtrillos instance = this;
