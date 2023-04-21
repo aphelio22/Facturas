@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
                         }
 
                         if (!getIntent().getStringExtra("fechaDesde").equals("Dia/Mes/Año") && !getIntent().getStringExtra("fechaHasta").equals("Dia/Mes/Año")) {
-                            ArrayList<Facturas> facturasFiltradas = new ArrayList<>();
+                            ArrayList<Facturas> listFiltro3 = new ArrayList<>();
 
 
                             SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/yyyyy");
@@ -184,11 +184,11 @@ public class MainActivity extends AppCompatActivity {
                             for (Facturas factura : facturas) {
                                 Date fechaFactura = sdf.parse(factura.getFecha());
                                 if (fechaFactura.after(fechaDesde) && fechaFactura.before(fechaHasta)) {
-                                    facturasFiltradas.add(factura);
+                                    listFiltro3.add(factura);
                                 }
 
                             }
-                            listFiltro = facturasFiltradas;
+                            listFiltro = listFiltro3;
                         }
 
 
