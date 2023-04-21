@@ -53,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
     private RequestQueue rq;
     private RecyclerView rv1;
     private AdaptadorFacturas adaptadorFacturas;
-    RelativeLayout layout;
     public static Double maxImporte = 0.0;
     private MainActivity instance = this;
 
@@ -181,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
                             }
 
 
-                            for (Facturas factura : facturas) {
+                            for (Facturas factura : listFiltro) {
                                 Date fechaFactura = sdf.parse(factura.getFecha());
                                 if (fechaFactura.after(fechaDesde) && fechaFactura.before(fechaHasta)) {
                                     listFiltro3.add(factura);
