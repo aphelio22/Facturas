@@ -91,7 +91,7 @@ public class Filtrillos extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 TextView importeTextView = findViewById(R.id.valorSeekBar);
-                importeTextView.setText(String.valueOf(progress) + " €");
+                importeTextView.setText(String.valueOf(progress));
                 valorActualSeekBar = progress;
             }
 
